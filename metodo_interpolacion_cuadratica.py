@@ -1,0 +1,1 @@
+#programar el metodo de la interpolacion cuadratica
