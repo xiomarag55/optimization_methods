@@ -1,6 +1,7 @@
+# Metodo de biseccion
 def biseccion(f, a, b, tol=1e-6, max_iter=100):
     if f(a) * f(b) >= 0:
-        raise ValueError("El intervalo dado no encierra una raíz.")
+        return "La funcion no tiene raices en el intervalo dado"
     
     iter_count = 0
     while (b - a) / 2 > tol and iter_count < max_iter:
@@ -14,7 +15,7 @@ def biseccion(f, a, b, tol=1e-6, max_iter=100):
         
         iter_count += 1
     
-    return (a + b) / 2  # Retornamos la mejor aproximación encontrada
+    return (a + b) / 2  
 
 # Ejemplo de uso
 def funcion(x):
